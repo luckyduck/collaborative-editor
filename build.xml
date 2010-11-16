@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<project name="MPedit" default="compile">
+	<!-- some properties -->
+	<property name="src" location="." />
+	<property name="dist"  location="dist"/>
+	<property name="classes"  location="classes"/>
+	<property name="docs" location="javadoc" />
+	
+	<!-- our predefined targets -->
+	<!-- init. -->
+	<target name="init">
+		<mkdir dir="${classes}" />
+		<mkdir dir="${dist}" />
+		<mkdir dir="${docs}" />
+	</target>
+	
+	<!-- compile target -->
+	<target name="compile" depends="init">
+		<javac srcdir="${src}" destdir="${classes}" />
+	</target>
+
+	<!-- prepare the distribution -->
+	<target name="dist" depends="compile">
+		<mkdir dir="${dist}/lib" />
+		<jar jarfile="${dist}/lib/MPedit.jar" 
+			basedir="${classes}"
+			manifest="Manifest.mf"/>
+	</target>
+
+	<!-- generate javadocs -->
+	<target name="docs" depends="init">
+		<javadoc packagenames="com.*, mpedit.*"
+			sourcepath="${src}"
+			destdir="${docs}"
+			Private="true"
+			author="true"
+			version="true"
+			Use="true"
+			windowtitle="${ant.project.name} API"
+			doctitle="${ant.project.name}">
+		</javadoc>
+	</target>
+
+	<!-- Delete the ${build} and ${dist} directory trees -->
+	<target name="clean">
+		<delete dir="${classes}" />
+		<delete dir="${dist}/lib" />
+	</target>
+</project>
