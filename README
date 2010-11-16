@@ -1,0 +1,20 @@
+Collaborative Editor
+
+This is a very basic, but generally working, collaborative editor. It was
+created in 2004 as a Java fun project, invented because we wanted to 
+be able to work together on the same document over a local area network during
+school lessons. We had no access to things like etherpad or SubEthaEdit which
+was available on MacOSX or something, and wrote our own solution. Iirc, 
+it helped us to save some time actually: we don't had to write down
+notes during the lessons redundantly. 
+
+It has still some flaws, though. For example, if text is inserted over the
+network, the cursor doesn't move automagically. We don't wanted to
+throw everything away this little piece of our history and decided
+to publish the code using the GPL license. 
+
+
+-----------------
+Best Regards:
+
+Alexander Zielke, Jan Brinkmann
