@@ -10,9 +10,9 @@ notes during the lessons redundantly.
 
 It has still some flaws, though. For example, if text is inserted over the
 network, the cursor doesn't move automagically. The best solution is 
-probably a complete rewrite. Since we decided not to throw away
-this little piece of our history and decided to publish the code 
-under the GPL license, it is probably interesting for anybody else. 
+probably a complete rewrite. However, we don't wanted to throw away
+this little piece of our history. That's the reason why the code 
+was released under the GPL license. Maybe it's nteresting for anybody else. 
 
 
 -----------------
