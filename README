@@ -12,7 +12,7 @@ It has still some flaws, though. For example, if text is inserted over the
 network, the cursor doesn't move automagically. The best solution is 
 probably a complete rewrite. However, we don't wanted to throw away
 this little piece of our history. That's the reason why the code 
-was released under the GPL license. Maybe it's nteresting for anybody else. 
+was released under the GPL license. Maybe it's interesting for anybody else. 
 
 
 -----------------
